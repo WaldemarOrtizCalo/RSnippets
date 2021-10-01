@@ -1,0 +1,42 @@
+snippet section1
+	#   [Title]                                              ####
+
+snippet section2
+	#      [Title]                                                              ####
+	
+snippet section3
+	#     	 [Title]                                                              ####
+	
+snippet template
+	#   Script Details                                                          ####
+	
+	# Author: Waldemar Ortiz-Calo
+	
+	# Date:`r paste(Sys.Date())` 
+	
+	# Purpose: 
+	
+	###############################################################################
+	#   Library / Functions / Data                                              ####
+	
+	#      Library                                                              ####
+	
+	#      Functions                                                            ####
+	
+	#      Data                                                                 ####
+	
+	###############################################################################
+snippet FolderStructure
+	# Data Folder
+	dir.create(paste0(getwd(),"/1.Data"))
+	
+	# Scripts Folder
+	dir.create(paste0(getwd(),"/2.R_Code"))
+	dir.create(paste0(getwd(),"/2.R_Code/1.Scripts"))
+	dir.create(paste0(getwd(),"/2.R_Code/2.Functions"))
+	
+	# Outputs Folder
+	dir.create(paste0(getwd(),"/3.Outputs"))
+	
+snippet sectionbreak
+	###############################################################################
