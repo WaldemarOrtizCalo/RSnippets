@@ -40,3 +40,13 @@ snippet FolderStructure
 	
 snippet sectionbreak
 	###############################################################################
+	
+snippet benchmark_code
+	library(rbenchmark)
+
+	benchmark(
+	"name_of_test" = {"script"},
+	"name_of_test" = {"script"},
+	"name_of_test" = {"script"},
+	replications = 1000,
+	columns = c("test", "replications", "elapsed","relative", "user.self", "sys.self"))
